@@ -69,7 +69,7 @@ export function signup(firstName, lastName, email, password, confirmPassword, na
         }
         catch(err){
             console.log("SIGNUP API ERROR ---> ", err) ;
-            toast.error("Signup Failed") ;
+            toast.error(err.response.data.message) ;
         }
 
         dispatch(setLoading(false)) ;
