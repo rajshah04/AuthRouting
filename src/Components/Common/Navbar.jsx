@@ -1,16 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../../Services/Operations/authAPI';
 
 
 const Navbar = () => {
-    const { token, user } = useSelector((state) => state.auth) ;
+    const { token } = useSelector((state) => state.auth) ;
 
     const dispatch = useDispatch() ;
     const navigate = useNavigate() ;
-
-    const [loading, setLoading] = useState(false) ;
 
     return (
         <div className='flex h-14 items-center justify-center bg-slate-950 border-b-[2px] border-b-slate-900'>
