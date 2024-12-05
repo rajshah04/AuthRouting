@@ -36,7 +36,7 @@ export function login(email, password, navigate){
         }
         catch(err){
             console.log("LOGIN API ERROR............", err) ;
-            toast.error(err.response.data.message) ;
+            toast.error(err?.response?.data?.message) ;
         }
 
         dispatch(setLoading(false)) ;
@@ -69,7 +69,7 @@ export function signup(firstName, lastName, email, password, confirmPassword, na
         }
         catch(err){
             console.log("SIGNUP API ERROR ---> ", err) ;
-            toast.error(err.response.data.message) ;
+            toast.error(err?.response?.data?.message) ;
         }
 
         dispatch(setLoading(false)) ;
