@@ -27,9 +27,10 @@
    cd ..
    ```
 
-5. Open the project in your browser at http://localhost:3000 to view your project.
 5. To run the program
 
    ```
    npm run dev
    ```
+
+6. Open the project in your browser at http://localhost:3000 to view your project.
